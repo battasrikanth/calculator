@@ -1,0 +1,87 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+background-color: #ecf0f3;
+font-family: sans-serif;
+outline: none;
+}
+.container{
+height: 100vh;
+display: flex;
+margin: 2px;
+align-items: center;
+justify-content: center;
+}
+.calculator,#histt{
+    width: 99%;
+    max-width: 260px;
+    height: 450px;
+    background-color: #f3f4f6 ;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,0.16);
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 25px;
+    padding: 10px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(0,0,0,0.16) ;
+}
+
+
+input{
+    width: 95%;
+    height: 40px;
+    border:none;
+    font-size: 30px;
+    text-align: right;
+    color:rgb(70, 70, 70);
+}
+#display2{
+    text-align: left;
+    font-size: 20px;
+}
+button{
+    height: 45px;
+    width: 45px;
+    background-color: #ecf0f3 ;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,0.16);
+    border:none;
+    border-radius: 15px;
+    margin:3px;
+    font-size: 16px;
+}
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    background-color: #f3f4f6;
+}
+img {
+    width: 20px;
+    margin-top: 5px;
+}
+#histt{
+    display:none;
+}
+ul{
+    padding: 15px;
+    background-color:#f3f4f6;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+li{ 
+    list-style: none;
+    background-color:#f3f4f6;
+}
+#undo{
+    position: relative;
+    left:180px;
+}
